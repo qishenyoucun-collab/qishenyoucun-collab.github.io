@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+		* {
+			box-sizing: border-box;
+			}
+		body {
+			max-width: 720px;
+			margin: 0 auto;
+			padding: 0 16px 24px;
+			font-family: sans-serif;
+			line-height: 1.8;
+			}
+		h1 {
+			text-align: center;
+			background-color: #005E7E;
+			color: white;
+			padding: 12px;
+			}
+		h2 {
+		    padding: 10px;
+		    color: #55d6f1;
+		    border-bottom: 1px solid #55d6f1;
+			}
+		.hobby-list {
+			display: grid;
+			gap: 16px;
+			}
+		.hobby-card {
+			padding: 16px;
+			border: 1px solid #55d6f1;
+			border-radius: 8px;
+			background-color: #f4fbfd;
+			}
+		.hobby-card h3 {
+			margin-top: 0;
+			color: #005E7E;
+			}
+		.hobby-card p {
+			margin-bottom: 0;
+			}
+		.profile-link {
+			overflow-wrap: anywhere;
+			}
+		@media (min-width: 600px) {
+			.hobby-list {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+			}
+		@media (min-width: 900px) {
+			.hobby-list {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				}
+			}
+	</style>
+  </head>
